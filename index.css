@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.13em; /* 24px 18px*/
+
+}
+
+.profile-el,
+.chat-el {
+    max-width: 2.13em; /* 34px */
+    max-height: 2.13em /* 34px */
+}
+
+.logo-el {
+    max-width: 5.25em; /* 84px */
+    max-height: 2.63em /* 42px */
+}
+
+.dog-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.dog-img {
+    /* display: block; */
+    max-height: 46.9em; /* 751px */
+    border-radius: 15px;
+    grid-row: 1 / -1;
+    grid-column: 1;
+} 
+
+.like-badge,
+.nope-badge {
+    grid-row: 1;
+    grid-column: 1;
+    width: 234px;
+    transform: rotate(-30deg);
+    margin-top: 55px;
+    margin-left: 15px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.details-container{
+    grid-row: 3;
+    grid-column: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    margin-left: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+p {
+    margin: 0;
+}
+
+.dog-details {
+    color: #F8F8F8;
+    font-size: 2.25em;
+    font-weight: 600;
+}
+
+.dog-bio {
+    color: #B7B7B7;
+    font-size: 1.5em;
+    font-weight: regular;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+
+.btn {
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px #e1e0e0;
+}
+
+.message {
+    box-sizing: border-box;
+    max-width: 534px; 
+    max-height: 46.9em;
+    box-shadow: 0 0 2px;
+    margin: 0 auto; 
+    padding: 187px 1.13em;
+    color: #B7B7B7;
+    font-weight: 600;
+    font-size: 2.25em;
+    border-radius: 15px;
+
+
+}
+
+.like:hover,
+.like:focus {
+    background: #DBFFF4;
+    box-shadow: 0 4px 10px #DBFFF4;
+}
+
+.dislike:hover,
+.dislike:focus {
+    background: #FFE7EF;
+    box-shadow: 0 4px 10px #FFE7EF;
+}
